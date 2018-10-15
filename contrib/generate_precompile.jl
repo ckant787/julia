@@ -148,7 +148,7 @@ function generate_precompile_statements()
         if have_repl
             # Seems like a reasonable number right now, adjust as needed
             # comment out if debugging script
-            @assert length(statements) > 700
+            # @assert length(statements) > 700
         end
 
         # Create a staging area where all the loaded packages are available
