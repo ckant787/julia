@@ -157,7 +157,7 @@ static void trampoline_deleter(void **f)
         free(nval);
 }
 
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__clang__)
 #pragma GCC diagnostic push
 // Use of `cache` is not clobbered in JL_TRY, see https://gcc.gnu.org/bugzilla/show_bug.cgi?id=65041
 #pragma GCC diagnostic ignored "-Wclobbered"
@@ -245,6 +245,6 @@ jl_value_t *jl_get_cfunction_trampoline(
     ptrhash_put(cache, (void*)fobj, result);
     return result;
 }
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__clang__)
 #pragma GCC diagnostic pop
 #endif
