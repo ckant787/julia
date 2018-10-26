@@ -67,7 +67,7 @@ every object, whether primitive or user-defined, has a type. The lack of type de
 most dynamic languages, however, means that one cannot instruct the compiler about the types of
 values, and often cannot explicitly talk about types at all. In static languages, on the other
 hand, while one can -- and usually must -- annotate types for the compiler, types exist only at
-compile time and cannot be manipulated or expressed at run time. In Julia, types are themselves
+compile time and cannot be manipulated or expressed at the run time. In Julia, types are themselves
 run-time objects, and can also be used to convey information to the compiler.
 
 While the casual programmer need not explicitly use types or multiple dispatch, they are the core
