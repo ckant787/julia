@@ -919,5 +919,5 @@ it to a string). When the Markdown content is rendered the usual `show` methods 
 and these can be overridden as usual. This design allows the Markdown to be extended with arbitrarily
 complex features (such as references) without cluttering the basic syntax.
 
-In principle, the Markdown parser itself can also be arbitrarily extended by packages, or an entirely
+In principle, the Markdown parser itself can also be arbitrarily extended by packages or an entirely
 custom flavour of Markdown can be used, but this should generally be unnecessary.
