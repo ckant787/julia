@@ -22,7 +22,7 @@ julia> foo.baz
 ```
 
 For many types, forming new objects by binding their field values together is all that is ever
-needed to create instances. However, in some cases more functionality is required when
+needed to create instances. However, in some cases, more functionality is required when
 creating composite objects. Sometimes invariants must be enforced, either by checking arguments
 or by transforming them. [Recursive data structures](https://en.wikipedia.org/wiki/Recursion_%28computer_science%29#Recursive_data_structures_.28structural_recursion.29),
 especially those that may be self-referential, often cannot be constructed cleanly without first
