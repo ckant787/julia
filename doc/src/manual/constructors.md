@@ -75,7 +75,7 @@ by calling another constructor method, such as the automatically provided defaul
 
 While outer constructor methods succeed in addressing the problem of providing additional convenience
 methods for constructing objects, they fail to address the other two use cases mentioned in the
-introduction of this chapter: enforcing invariants, and allowing construction of self-referential
+introduction of this chapter: enforcing invariants and allowing construction of self-referential
 objects. For these problems, one needs *inner* constructor methods. An inner constructor method
 is like an outer constructor method, except for two differences:
 
