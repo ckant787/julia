@@ -315,7 +315,7 @@ As you can see, for constructor calls with explicit type parameters, the argumen
 to the implied field types: `Point{Int64}(1,2)` works, but `Point{Int64}(1.0,2.5)` raises an
 [`InexactError`](@ref) when converting `2.5` to [`Int64`](@ref). When the type is implied
 by the arguments to the constructor call, as in `Point(1,2)`, then the types of the
-arguments must agree -- otherwise the `T` cannot be determined -- but any pair of real
+arguments must agree -- otherwise, the `T` cannot be determined -- but any pair of real
 arguments with matching type may be given to the generic `Point` constructor.
 
 What's really going on here is that `Point`, `Point{Float64}` and `Point{Int64}` are all different
